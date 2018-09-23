@@ -1,5 +1,5 @@
 default: build
-	xxd -r -p src/min.hex > build/min.wasm
+	grep -v '#' src/min.hex | xxd -r -p > build/min.wasm
 
 build:
 	mkdir build
