@@ -1,2 +1,7 @@
-# This is a comment
-5468 6973 2069 7320 6120 7465 7374 0a
+# This is the magic number: '\0asm’
+
+6d736100
+
+# This is the version number
+
+00000001
