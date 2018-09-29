@@ -1,5 +1,5 @@
 default: build
-	grep -v '#' src/min.hex | xxd -r -p > build/min.wasm
+	grep -v '#' src/min.hex | ruby xxd.rb 
 
 build:
 	mkdir build
