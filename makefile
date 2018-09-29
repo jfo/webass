@@ -1,8 +1,5 @@
-default: build
-	grep -v '#' src/min.hex | ruby xxd.rb 
-
-build:
-	mkdir build
+default:
+	ruby xxd.rb
 
 PHONY: clean
 clean:
