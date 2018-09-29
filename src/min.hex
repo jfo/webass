@@ -20,7 +20,7 @@ type section payload
     return count 00000001
     return type 01111111
 
-function section 00000001
+function section 00000011
 function section payload length 00000010
 function section payload
   count 00000001
@@ -40,7 +40,7 @@ code section 00001010
 code section payload length 00000000
 code section payload
   function body:
-    body_size: 00000000
+    body_size: 00000001
     local_count: 00000001
     locals: 00000000
     code:
