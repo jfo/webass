@@ -20,11 +20,11 @@ type section payload
     return count 00000001
     return type 01111111
 
-function section 00000011
-function section payload length 00000010
-function section payload
-  count 00000001
-  index 00000000
+# function section 00000011
+# function section payload length 00000010
+# function section payload
+#   count 00000001
+#   index 00000000
 
 export section 00000111
 export section payload length 00000111
@@ -36,13 +36,13 @@ export section payload:
     kind: 00000000
     index into function space: 00000000
 
-code section 00001010
-code section payload length 00000000
-code section payload
-  function body:
-    body_size: 00000001
-    local_count: 00000001
-    locals: 00000000
-    code:
-      return 00001111
-    end: 00001011
+# code section 00001010
+# code section payload length 00000100
+# code section payload
+#   function body:
+#     body_size: 00000000
+#     local_count: 00000000
+#     code:
+#     0001111
+#     0001111
+#     end: 00001011
