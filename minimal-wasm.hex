@@ -1,0 +1,21 @@
+# WASM_BINARY_MAGIC
+0061 736d
+# WASM_BINARY_VERSION
+0100 0000
+# section "Global" (6)
+# section code
+06
+# section size (guess)
+06
+# num globals
+01
+# i32
+7f
+# global mutability
+00
+# i32.const
+41
+# i32 literal
+2a
+# end
+0b
