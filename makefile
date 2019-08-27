@@ -1,8 +1,8 @@
-default: compile
-	wasm2wat build/min.wasm
+run: compile
+	node ./nodedemo.js
 
 compile: builddir
-	grep -v '#' minimal-wasm.hex | xxd -r -p > build/min.wasm 
+	wat2wasm ./test.wat -o ./build/out.wasm
 
 builddir:
 	mkdir -p build
